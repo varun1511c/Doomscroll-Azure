@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.6;
+  }
+  
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .day {
+    background: white;
+    border: 5px solid #ccc;
+    padding: 50px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .day.complete {
+    background-color: #d1ffd1;
+  }
+  
+  .day::after {
+    content: '✓';
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+    color: green;
+  }
+  
+  .day.complete::after {
+    display: block;
+  }
+  
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: left;
+    position: relative;
+    font-size: 25px;
+  }
+
+  #day-title {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #day-content {
+    font-size: 50px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  
+  #close-btn {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  #complete-btn {
+    font-size: 50px;
+    padding: 30px 60px;
+    margin-top: 40px;
+    background-color: #28a745; /* green */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+  }
+  
+  #complete-btn:hover {
+    background-color: #218838;
+  }  
+  
+  .hidden {
+    display: none !important;
+  }
+  

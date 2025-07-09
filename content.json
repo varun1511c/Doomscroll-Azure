@@ -1,0 +1,122 @@
+[
+    {
+      "title": "Day 1: What is cloud computing",
+      "body": "Cloud computing is the delivery of computing services over the internet. Computing services include common IT infrastructure such as virtual machines, storage, databases, and networking. Cloud services also expand the traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI). Because cloud computing uses the internet to deliver these services, it doesn’t have to be constrained by physical infrastructure the same way that a traditional datacenter is. That means if you need to increase your IT infrastructure rapidly, you don’t have to wait to build a new datacenter—you can use the cloud to rapidly expand your IT footprint."
+    },
+    {
+      "title": "Day 2: Describe the shared responsibility model",
+      "body": "You may have heard of the shared responsibility model, but you may not understand what it means or how it impacts cloud computing. Start with a traditional corporate datacenter. The company is responsible for maintaining the physical space, ensuring security, and maintaining or replacing the servers if anything happens. The IT department is responsible for maintaining all the infrastructure and software needed to keep the datacenter up and running. They’re also likely to be responsible for keeping all systems patched and on the correct version. With the shared responsibility model, these responsibilities get shared between the cloud provider and the consumer. Physical security, power, cooling, and network connectivity are the responsibility of the cloud provider. The consumer isn’t collocated with the datacenter, so it wouldn’t make sense for the consumer to have any of those responsibilities. At the same time, the consumer is responsible for the data and information stored in the cloud. (You wouldn’t want the cloud provider to be able to read your information.) The consumer is also responsible for access security, meaning you only give access to those who need it."
+    },
+    {
+      "title": "Day 3: What is a virtual machine",
+      "body": "A virtual machine (VM) is a software emulation of a physical computer. It runs an operating system and applications just like a physical computer, but it does so on top of a hypervisor, which is software that allows multiple VMs to run on a single physical machine. VMs are isolated from each other, meaning that if one VM crashes or is compromised, it doesn’t affect the others. This isolation is one of the key benefits of using VMs in cloud computing."
+    },
+    {
+      "title": "Day 4: What is serverless computing",
+      "body": "Serverless computing is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. In this model, developers write code and deploy it without worrying about the underlying infrastructure. The cloud provider automatically scales the resources needed to run the code based on demand. This allows developers to focus on writing code rather than managing servers."
+    },
+    {
+      "title": "Day 5: What is containerization",
+      "body": "Containerization is a lightweight form of virtualization that allows you to run applications in isolated environments called containers. Containers share the same operating system kernel but run in their own user space, which makes them more efficient than traditional virtual machines. Containers can be easily deployed, scaled, and managed, making them ideal for microservices architectures and cloud-native applications."
+    },
+    {
+      "title": "Day 6: What is a cloud service provider",
+      "body": "A cloud service provider (CSP) is a company that offers cloud computing services to individuals and businesses. CSPs provide a range of services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Some of the most popular CSPs include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP)."
+    },
+    {
+      "title": "Day 7: What is an API",
+      "body": "An application programming interface (API) is a set of rules and protocols that allows different software applications to communicate with each other. APIs are used to access the functionality of a software application or service, allowing developers to build applications that can interact with other systems. In cloud computing, APIs are often used to manage resources, such as virtual machines, storage, and databases."
+    },
+    {
+      "title": "Day 8: What is a database",
+      "body": "A database is an organized collection of data that can be easily accessed, managed, and updated. In cloud computing, databases can be hosted on cloud service providers, allowing for scalable and flexible data storage solutions. There are various types of databases, including relational databases (like MySQL and PostgreSQL) and NoSQL databases (like MongoDB and DynamoDB)."
+    },
+    {
+      "title": "Day 9: What is a load balancer",
+      "body": "A load balancer is a device or software that distributes network or application traffic across multiple servers. This helps ensure that no single server becomes overwhelmed with too much traffic, improving the availability and reliability of applications. Load balancers can also provide additional features such as SSL termination and health checks."
+    },
+    {
+      "title": "Day 10: What is a content delivery network (CDN)",
+      "body": "A content delivery network (CDN) is a system of distributed servers that deliver web content to users based on their geographic location. CDNs help improve the performance and availability of websites by caching content closer to users, reducing latency and load times."
+    },
+    {
+      "title": "Day 11: What is a virtual private cloud (VPC)",
+      "body": "A virtual private cloud (VPC) is a private network within a public cloud that allows you to isolate your resources and control access to them. VPCs provide a secure environment for running applications and storing data, while still benefiting from the scalability and flexibility of the public cloud."
+    },
+    {
+      "title": "Day 12: What is multi-cloud",
+      "body": "Multi-cloud refers to the use of multiple cloud service providers to meet an organization’s computing needs. This approach allows organizations to avoid vendor lock-in, improve redundancy, and take advantage of the unique features offered by different CSPs."
+    },
+    {
+      "title": "Day 13: What is hybrid cloud",
+      "body": "Hybrid cloud is a computing environment that combines public and private clouds, allowing data and applications to be shared between them. This approach provides greater flexibility and scalability, as organizations can choose where to run their applications based on their specific requirements."
+    },
+    {
+      "title": "Day 14: What is DevOps",
+      "body": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software more quickly. In the context of cloud computing, DevOps practices often involve using automation tools and cloud services to streamline the development, testing, and deployment processes."
+    },
+    {
+      "title": "Day 15: What is continuous integration/continuous deployment (CI/CD)",
+      "body": "Continuous integration (CI) and continuous deployment (CD) are software development practices that involve automatically building, testing, and deploying code changes. CI/CD pipelines help ensure that code changes are integrated into the main codebase quickly and reliably, reducing the risk of bugs and improving overall software quality."
+    },
+    {
+      "title": "Day 16: What is infrastructure as code (IaC)",
+      "body": "Infrastructure as code (IaC) is a practice that involves managing and provisioning cloud infrastructure using code and automation tools. IaC allows developers to define their infrastructure in a declarative manner, making it easier to version control, test, and deploy changes to the infrastructure."
+    },
+    {
+      "title": "Day 17: What is a microservices architecture",
+      "body": "A microservices architecture is an approach to software development where applications are built as a collection of loosely coupled, independently deployable services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently. This architecture is well-suited for cloud-native applications and allows for greater flexibility and scalability."
+    },
+    {
+      "title": "Day 18: What is a serverless architecture",
+      "body": "A serverless architecture is a cloud computing model where the cloud provider automatically manages the infrastructure needed to run applications. In this model, developers write code and deploy it without worrying about the underlying servers or infrastructure. Serverless architectures allow for automatic scaling and pay-as-you-go pricing, making them cost-effective for many applications."
+    },
+    {
+      "title": "Day 19: What is a cloud-native application",
+      "body": "A cloud-native application is an application designed specifically to take advantage of the cloud computing model. Cloud-native applications are typically built using microservices architectures, containerization, and serverless computing. They are designed to be scalable, resilient, and easily deployable in cloud environments."
+    },
+    {
+      "title": "Day 20: What is a cloud security group",
+      "body": "A cloud security group is a virtual firewall that controls inbound and outbound traffic to resources in a cloud environment. Security groups allow you to define rules that specify which traffic is allowed or denied based on factors such as IP address, port number, and protocol. They help ensure that only authorized traffic can access your resources."
+    },
+    {
+      "title": "Day 21: What is a cloud access control list (ACL)",
+      "body": "A cloud access control list (ACL) is a set of rules that define which users or systems can access specific resources in a cloud environment. ACLs help enforce security policies by allowing you to specify permissions for individual users or groups, ensuring that only authorized users can access sensitive data and resources."
+    },
+    {
+      "title": "Day 22: What is cloud monitoring",
+      "body": "Cloud monitoring is the process of tracking the performance and availability of cloud resources and applications. Monitoring tools help you identify issues, optimize resource usage, and ensure that your applications are running smoothly. Common metrics monitored include CPU usage, memory usage, network traffic, and response times."
+    },
+    {
+      "title": "Day 23: What is cloud logging",
+      "body": "Cloud logging is the practice of collecting and storing log data from cloud resources and applications. Logs provide valuable insights into the behavior of your applications and can help you troubleshoot issues, monitor performance, and ensure compliance with security policies."
+    },
+    {
+      "title": "Day 24: What is cloud cost management",
+      "body": "Cloud cost management involves tracking and optimizing the costs associated with using cloud services. This includes monitoring resource usage, identifying cost-saving opportunities, and implementing budgeting and forecasting strategies to ensure that your cloud spending aligns with your business goals."
+    },
+    {
+      "title": "Day 25: What is cloud compliance",
+      "body": "Cloud compliance refers to the process of ensuring that your cloud resources and applications meet regulatory requirements and industry standards. This includes implementing security controls, conducting audits, and maintaining documentation to demonstrate compliance with relevant regulations such as GDPR, HIPAA, or PCI DSS."
+    },
+    {
+      "title": "Day 26: What is a cloud service level agreement (SLA)",
+      "body": "A cloud service level agreement (SLA) is a contract between a cloud service provider and a customer that outlines the expected level of service, including performance metrics, availability guarantees, and support response times. SLAs help ensure that both parties understand their responsibilities and expectations regarding the use of cloud services."
+    },
+    {
+      "title": "Day 27: What is a cloud migration",
+      "body": "Cloud migration is the process of moving applications, data, and workloads from on-premises infrastructure or another cloud environment to a cloud service provider. This process can involve rehosting, replatforming, or refactoring applications to take advantage of cloud-native features and capabilities. Successful cloud migrations require careful planning, testing, and execution to minimize downtime and ensure a smooth transition."
+    },
+    {
+      "title": "Day 28: What is cloud disaster recovery",
+      "body": "Cloud disaster recovery is the process of preparing for and recovering from unexpected events that disrupt cloud services or applications. This includes implementing backup and restore strategies, creating failover plans, and regularly testing recovery procedures to ensure that your applications can quickly recover from outages or data loss."
+    },
+    {
+      "title": "Day 29: What is cloud scalability",
+      "body": "Cloud scalability refers to the ability of a cloud environment to handle increased workloads by adding or removing resources as needed. This can be achieved through vertical scaling (adding more resources to existing instances) or horizontal scaling (adding more instances). Cloud scalability allows organizations to adapt to changing demands without significant upfront investments in infrastructure."
+    },
+    {
+      "title": "Day 30: What is cloud elasticity",
+      "body": "Cloud elasticity is the ability of a cloud environment to automatically adjust resources based on current demand. This means that resources can be scaled up or down dynamically, allowing organizations to optimize resource usage and costs. Elasticity is a key benefit of cloud computing, enabling businesses to respond quickly to changing workloads and user demands."
+    }
+  ]
