@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Doomscroll Cloud</title>
+  <title>Doomscroll Detox</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Doomscroll Azure: 30 Days of Reading</h1>
+  <h1>Doomscroll Cloud: 30 Days of Azure</h1>
   <div id="calendar"></div>
 
   <div id="modal" class="hidden">
@@ -14,7 +14,20 @@
       <span id="close-btn">&times;</span>
       <h2 id="day-title"></h2>
       <p id="day-content"></p>
-      <button id="complete-btn">Mark as Complete ✅</button>
+
+      <!-- Quiz Section -->
+      <div id="quiz-container"></div>
+
+      <!-- Submit and Reset Buttons -->
+      <div style="text-align:center; margin-top: 30px;">
+        <button id="submit-btn" class="quiz-btn">Submit</button>
+        <button id="reset-btn" class="quiz-btn">Reset</button>
+      </div>
+
+      <!-- Mark as Complete Button at Bottom -->
+      <div class="complete-btn-container">
+        <button id="complete-btn">Mark as Complete ✅</button>
+      </div>
     </div>
   </div>
 
