@@ -1,4 +1,5 @@
-// v2 script.js - updated for evaluation logic via "Mark as Complete"
+// v2 script.js - with persistent quiz answers and evaluation logic
+
 let content = [];
 const calendar = document.getElementById('calendar');
 const modal = document.getElementById('modal');
@@ -41,11 +42,11 @@ function updateDayStatus(dayEl, i) {
 
   dayEl.classList.remove('pending', 'in-progress', 'complete');
   if (taskStatus === 'complete' && evalStatus === 'complete') {
-    dayEl.classList.add('complete');
+    dayEl.classList.add('complete'); // green
   } else if (taskStatus === 'complete') {
-    dayEl.classList.add('in-progress');
+    dayEl.classList.add('in-progress'); // orange
   } else {
-    dayEl.classList.add('pending');
+    dayEl.classList.add('pending'); // default
   }
 }
 
@@ -78,6 +79,15 @@ function buildQuiz(questions) {
         </label><br>`).join('');
     quizContainer.appendChild(qDiv);
   });
+
+  // Load previously saved answers
+  const savedAnswers = JSON.parse(localStorage.getItem(`day${currentDay}_answers`)) || [];
+  savedAnswers.forEach((ans, idx) => {
+    if (ans !== null) {
+      const radio = quizContainer.querySelector(`input[name="q${idx}"][value="${ans}"]`);
+      if (radio) radio.checked = true;
+    }
+  });
 }
 
 submitBtn.addEventListener('click', () => {
@@ -85,20 +95,29 @@ submitBtn.addEventListener('click', () => {
   const dayData = content[currentDay - 1];
   const correctAnswers = dayData.quiz.map(q => q.answer);
 
+  // Save selected answers
+  const userAnswers = [];
+  dayData.quiz.forEach((_, qIndex) => {
+    const selected = document.querySelector(`input[name="q${qIndex}"]:checked`);
+    userAnswers.push(selected ? selected.value : null);
+  });
+  localStorage.setItem(`day${currentDay}_answers`, JSON.stringify(userAnswers));
+
   // Show correct answers
   const allQuestions = quizContainer.querySelectorAll('.quiz-question');
   allQuestions.forEach((qDiv, idx) => {
     const labels = qDiv.querySelectorAll('label');
     labels.forEach(label => {
       if (label.textContent.includes(correctAnswers[idx])) {
-        label.style.backgroundColor = '#d4edda';
+        label.style.backgroundColor = '#d4edda'; // green for correct
+        label.style.fontWeight = 'bold';
       } else {
-        label.style.backgroundColor = '';
+        label.style.opacity = '0.6';
       }
     });
   });
 
-  // Mark task as complete, eval stays pending until completeBtn is clicked
+  // Mark task as complete, evaluation pending
   localStorage.setItem(`day${currentDay}_task`, 'complete');
   localStorage.setItem(`day${currentDay}_eval`, 'pending');
   currentAnswersShown = true;
@@ -141,6 +160,5 @@ completeBtn.addEventListener('click', () => {
   buildCalendar();
   closeModal();
 });
-
 
 closeBtn.addEventListener('click', closeModal);
