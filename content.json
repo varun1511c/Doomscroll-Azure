@@ -1,122 +1,994 @@
 [
     {
       "title": "Day 1: What is cloud computing",
-      "body": "Cloud computing is the delivery of computing services over the internet. Computing services include common IT infrastructure such as virtual machines, storage, databases, and networking. Cloud services also expand the traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI). Because cloud computing uses the internet to deliver these services, it doesn’t have to be constrained by physical infrastructure the same way that a traditional datacenter is. That means if you need to increase your IT infrastructure rapidly, you don’t have to wait to build a new datacenter—you can use the cloud to rapidly expand your IT footprint."
+      "body": "Cloud computing is the delivery of computing services over the internet. Computing services include common IT infrastructure such as virtual machines, storage, databases, and networking. Cloud services also expand the traditional IT offerings to include things like Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI). Because cloud computing uses the internet to deliver these services, it doesn’t have to be constrained by physical infrastructure the same way that a traditional datacenter is. That means if you need to increase your IT infrastructure rapidly, you don’t have to wait to build a new datacenter—you can use the cloud to rapidly expand your IT footprint.",
+      "quiz": [
+        {
+          "question": "What is cloud computing?",
+          "options": [
+            "A delivery of computing services over the internet",
+            "A type of physical datacenter",
+            "A method of storing data on local servers"
+          ],
+          "answer": "A delivery of computing services over the internet"
+        },
+        {
+          "question": "Which of the following is NOT a benefit of cloud computing?",
+          "options": [
+            "Scalability",
+            "Cost savings",
+            "Limited access to resources"
+          ],
+          "answer": "Cost savings"
+        },
+        {
+          "question": "What types of services can cloud computing provide?",
+          "options": [
+            "Virtual machines and storage",
+            "Databases and networking",
+            "IoT, ML, and AI",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        }
+      ]
     },
     {
       "title": "Day 2: Describe the shared responsibility model",
-      "body": "You may have heard of the shared responsibility model, but you may not understand what it means or how it impacts cloud computing. Start with a traditional corporate datacenter. The company is responsible for maintaining the physical space, ensuring security, and maintaining or replacing the servers if anything happens. The IT department is responsible for maintaining all the infrastructure and software needed to keep the datacenter up and running. They’re also likely to be responsible for keeping all systems patched and on the correct version. With the shared responsibility model, these responsibilities get shared between the cloud provider and the consumer. Physical security, power, cooling, and network connectivity are the responsibility of the cloud provider. The consumer isn’t collocated with the datacenter, so it wouldn’t make sense for the consumer to have any of those responsibilities. At the same time, the consumer is responsible for the data and information stored in the cloud. (You wouldn’t want the cloud provider to be able to read your information.) The consumer is also responsible for access security, meaning you only give access to those who need it."
+      "body": "You may have heard of the shared responsibility model, but you may not understand what it means or how it impacts cloud computing. Start with a traditional corporate datacenter. The company is responsible for maintaining the physical space, ensuring security, and maintaining or replacing the servers if anything happens. The IT department is responsible for maintaining all the infrastructure and software needed to keep the datacenter up and running. They’re also likely to be responsible for keeping all systems patched and on the correct version. With the shared responsibility model, these responsibilities get shared between the cloud provider and the consumer. Physical security, power, cooling, and network connectivity are the responsibility of the cloud provider. The consumer isn’t collocated with the datacenter, so it wouldn’t make sense for the consumer to have any of those responsibilities. At the same time, the consumer is responsible for the data and information stored in the cloud. (You wouldn’t want the cloud provider to be able to read your information.) The consumer is also responsible for access security, meaning you only give access to those who need it.",
+      "quiz": [
+        {
+          "question": "What is the shared responsibility model?",
+          "options": [
+            "A model where the cloud provider and consumer share responsibilities",
+            "A model where only the cloud provider is responsible for security",
+            "A model where only the consumer is responsible for security"
+          ],
+          "answer": "A model where the cloud provider and consumer share responsibilities"
+        },
+        {
+          "question": "Who is responsible for physical security in the shared responsibility model?",
+          "options": [
+            "The cloud provider",
+            "The consumer",
+            "Both the cloud provider and consumer"
+          ],
+          "answer": "The cloud provider"
+        },
+        {
+          "question": "What is the consumer responsible for in the shared responsibility model?",
+          "options": [
+            "Data and information stored in the cloud",
+            "Physical space and cooling",
+            "Network connectivity"
+          ],
+          "answer": "Data and information stored in the cloud"
+        }
+      ]
     },
     {
       "title": "Day 3: What is a virtual machine",
-      "body": "A virtual machine (VM) is a software emulation of a physical computer. It runs an operating system and applications just like a physical computer, but it does so on top of a hypervisor, which is software that allows multiple VMs to run on a single physical machine. VMs are isolated from each other, meaning that if one VM crashes or is compromised, it doesn’t affect the others. This isolation is one of the key benefits of using VMs in cloud computing."
+      "body": "A virtual machine (VM) is a software emulation of a physical computer. It runs an operating system and applications just like a physical computer, but it does so on top of a hypervisor, which is software that allows multiple VMs to run on a single physical machine. VMs are isolated from each other, meaning that if one VM crashes or is compromised, it doesn’t affect the others. This isolation is one of the key benefits of using VMs in cloud computing.",
+      "quiz": [
+        {
+          "question": "What is a virtual machine?",
+          "options": [
+            "A software emulation of a physical computer",
+            "A type of physical server",
+            "A network device"
+          ],
+          "answer": "A software emulation of a physical computer"
+        },
+        {
+          "question": "What is the purpose of a hypervisor?",
+          "options": [
+            "To manage multiple VMs on a single physical machine",
+            "To provide physical security for VMs",
+            "To store data in the cloud"
+          ],
+          "answer": "To manage multiple VMs on a single physical machine"
+        },
+        {
+          "question": "What is one key benefit of using VMs in cloud computing?",
+          "options": [
+            "Isolation from other VMs",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Isolation from other VMs"
+        }
+      ]
     },
     {
       "title": "Day 4: What is serverless computing",
-      "body": "Serverless computing is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. In this model, developers write code and deploy it without worrying about the underlying infrastructure. The cloud provider automatically scales the resources needed to run the code based on demand. This allows developers to focus on writing code rather than managing servers."
+      "body": "Serverless computing is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. In this model, developers write code and deploy it without worrying about the underlying infrastructure. The cloud provider automatically scales the resources needed to run the code based on demand. This allows developers to focus on writing code rather than managing servers.",
+      "quiz": [
+        {
+          "question": "What is serverless computing?",
+          "options": [
+            "A cloud computing execution model where the cloud provider manages servers",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A cloud computing execution model where the cloud provider manages servers"
+        },
+        {
+          "question": "What is one benefit of serverless computing?",
+          "options": [
+            "Automatic scaling of resources based on demand",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Automatic scaling of resources based on demand"
+        },
+        {
+          "question": "What do developers focus on in a serverless computing model?",
+          "options": [
+            "Writing code",
+            "Managing servers",
+            "Physical security"
+          ],
+          "answer": "Writing code"
+        }
+      ]  
     },
     {
       "title": "Day 5: What is containerization",
-      "body": "Containerization is a lightweight form of virtualization that allows you to run applications in isolated environments called containers. Containers share the same operating system kernel but run in their own user space, which makes them more efficient than traditional virtual machines. Containers can be easily deployed, scaled, and managed, making them ideal for microservices architectures and cloud-native applications."
+      "body": "Containerization is a lightweight form of virtualization that allows you to run applications in isolated environments called containers. Containers share the same operating system kernel but run in their own user space, which makes them more efficient than traditional virtual machines. Containers can be easily deployed, scaled, and managed, making them ideal for microservices architectures and cloud-native applications.",
+      "quiz": [
+        {
+          "question": "What is containerization?",
+          "options": [
+            "A lightweight form of virtualization",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A lightweight form of virtualization"
+        },
+        {
+          "question": "What is one benefit of using containers?",
+          "options": [
+            "Efficiency compared to traditional virtual machines",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer":  "Efficiency compared to traditional virtual machines"
+        },
+        {
+          "question": "In what type of architecture are containers often used?",
+          "options": [
+            "Microservices architectures",
+            "Monolithic architectures",
+            "Traditional datacenter architectures"
+          ],
+          "answer": "Microservices architectures"
+        }
+      ]
     },
     {
       "title": "Day 6: What is a cloud service provider",
-      "body": "A cloud service provider (CSP) is a company that offers cloud computing services to individuals and businesses. CSPs provide a range of services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Some of the most popular CSPs include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP)."
+      "body": "A cloud service provider (CSP) is a company that offers cloud computing services to individuals and businesses. CSPs provide a range of services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Some of the most popular CSPs include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).",
+      "quiz": [
+        {
+          "question": "What is a cloud service provider (CSP)?",
+          "options": [
+            "A company that offers cloud computing services",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A company that offers cloud computing services"
+        },
+        {
+          "question": "Which of the following is NOT a type of cloud service offered by CSPs?",
+          "options": [
+            "Infrastructure as a service (IaaS)",
+            "Platform as a service (PaaS)",
+            "Hardware as a service (HaaS)"
+          ],
+          "answer": "Hardware as a service (HaaS)"
+        },
+        {
+          "question": "Which of the following is a popular cloud service provider?",
+          "options": [
+            "Amazon Web Services (AWS)",
+            "Microsoft Azure",
+            "Google Cloud Platform (GCP)",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        }
+      ]
     },
     {
       "title": "Day 7: What is an API",
-      "body": "An application programming interface (API) is a set of rules and protocols that allows different software applications to communicate with each other. APIs are used to access the functionality of a software application or service, allowing developers to build applications that can interact with other systems. In cloud computing, APIs are often used to manage resources, such as virtual machines, storage, and databases."
+      "body": "An application programming interface (API) is a set of rules and protocols that allows different software applications to communicate with each other. APIs are used to access the functionality of a software application or service, allowing developers to build applications that can interact with other systems. In cloud computing, APIs are often used to manage resources, such as virtual machines, storage, and databases.",
+      "quiz": [
+        {
+          "question": "What is an API?",
+          "options": [
+            "A set of rules and protocols for software communication",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A set of rules and protocols for software communication"
+        },
+        {
+          "question": "What is one use of APIs in cloud computing?",
+          "options": [
+            "Managing resources like virtual machines and storage",
+            "Providing physical security for cloud resources",
+            "Reducing network connectivity"
+          ],
+          "answer": "Managing resources like virtual machines and storage"
+        },
+        {
+          "question": "How do APIs help developers?",
+          "options": [
+            "By allowing them to build applications that interact with other systems",
+            "By providing physical space for applications",
+            "By managing servers"
+          ],
+          "answer": "By allowing them to build applications that interact with other systems"
+        }
+      ]
     },
     {
       "title": "Day 8: What is a database",
-      "body": "A database is an organized collection of data that can be easily accessed, managed, and updated. In cloud computing, databases can be hosted on cloud service providers, allowing for scalable and flexible data storage solutions. There are various types of databases, including relational databases (like MySQL and PostgreSQL) and NoSQL databases (like MongoDB and DynamoDB)."
+      "body": "A database is an organized collection of data that can be easily accessed, managed, and updated. In cloud computing, databases can be hosted on cloud service providers, allowing for scalable and flexible data storage solutions. There are various types of databases, including relational databases (like MySQL and PostgreSQL) and NoSQL databases (like MongoDB and DynamoDB).",
+      "quiz": [
+        {
+          "question": "What is a database?",
+          "options": [
+            "An organized collection of data",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "An organized collection of data"
+        },
+        {
+          "question": "What is one benefit of using cloud-hosted databases?",
+          "options": [
+            "Scalability and flexibility",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Scalability and flexibility"
+        },
+        {
+          "question": "Which of the following is a type of relational database?",
+          "options": [
+            "MySQL",
+            "MongoDB",
+            "DynamoDB"
+          ],
+          "answer": "MySQL"
+        }
+      ]
     },
     {
       "title": "Day 9: What is a load balancer",
-      "body": "A load balancer is a device or software that distributes network or application traffic across multiple servers. This helps ensure that no single server becomes overwhelmed with too much traffic, improving the availability and reliability of applications. Load balancers can also provide additional features such as SSL termination and health checks."
+      "body": "A load balancer is a device or software that distributes network or application traffic across multiple servers. This helps ensure that no single server becomes overwhelmed with too much traffic, improving the availability and reliability of applications. Load balancers can also provide additional features such as SSL termination and health checks.",
+      "quiz": [
+        {
+          "question": "What is the primary function of a load balancer?",
+          "options": [
+            "To distribute traffic across multiple servers",
+            "To store data in the cloud",
+            "To provide physical security for servers"
+          ],
+          "answer": "To distribute traffic across multiple servers"
+        },
+        {
+          "question": "What is one benefit of using a load balancer?",
+          "options": [
+            "Improved availability and reliability of applications",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Improved availability and reliability of applications"
+        },
+        {
+          "question": "What additional features can load balancers provide?",
+          "options": [
+            "SSL termination and health checks",
+            "Physical security for servers",
+            "Data storage in the cloud"
+          ],
+          "answer": "SSL termination and health checks"
+        }
+      ]
     },
     {
       "title": "Day 10: What is a content delivery network (CDN)",
-      "body": "A content delivery network (CDN) is a system of distributed servers that deliver web content to users based on their geographic location. CDNs help improve the performance and availability of websites by caching content closer to users, reducing latency and load times."
+      "body": "A content delivery network (CDN) is a system of distributed servers that deliver web content to users based on their geographic location. CDNs help improve the performance and availability of websites by caching content closer to users, reducing latency and load times.",
+      "quiz": [
+        {
+          "question": "What is a content delivery network (CDN)?",
+          "options": [
+            "A system of distributed servers that deliver web content",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A system of distributed servers that deliver web content"
+        },
+        {
+          "question": "What is one benefit of using a CDN?",
+          "options": [
+            "Improved performance and availability of websites",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Improved performance and availability of websites"
+        },
+        {
+          "question": "How do CDNs reduce latency and load times?",
+          "options": [
+            "By caching content closer to users",
+            "By enabling independent scaling of services",
+            "By managing servers"
+          ],
+          "answer": "By caching content closer to users"
+        }
+      ]
     },
     {
       "title": "Day 11: What is a virtual private cloud (VPC)",
-      "body": "A virtual private cloud (VPC) is a private network within a public cloud that allows you to isolate your resources and control access to them. VPCs provide a secure environment for running applications and storing data, while still benefiting from the scalability and flexibility of the public cloud."
+      "body": "A virtual private cloud (VPC) is a private network within a public cloud that allows you to isolate your resources and control access to them. VPCs provide a secure environment for running applications and storing data, while still benefiting from the scalability and flexibility of the public cloud.",
+      "quiz": [
+        {
+          "question": "What is a virtual private cloud (VPC)?",
+          "options": [
+            "A private network within a public cloud",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A private network within a public cloud"
+        },
+        {
+          "question": "What is one benefit of using a VPC?",
+          "options": [
+            "Isolation of resources and control over access",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Isolation of resources and control over access"
+        },
+        {
+          "question": "How does a VPC provide security for applications and data?",
+          "options": [
+            "By creating a secure environment within the public cloud",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By creating a secure environment within the public cloud"
+        }
+      ]
     },
     {
       "title": "Day 12: What is multi-cloud",
-      "body": "Multi-cloud refers to the use of multiple cloud service providers to meet an organization’s computing needs. This approach allows organizations to avoid vendor lock-in, improve redundancy, and take advantage of the unique features offered by different CSPs."
+      "body": "Multi-cloud refers to the use of multiple cloud service providers to meet an organization’s computing needs. This approach allows organizations to avoid vendor lock-in, improve redundancy, and take advantage of the unique features offered by different CSPs.",
+      "quiz": [
+        {
+          "question": "What is multi-cloud?",
+          "options": [
+            "The use of multiple cloud service providers",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The use of multiple cloud service providers"
+        },
+        {
+          "question": "What is one benefit of using a multi-cloud approach?",
+          "options": [
+            "Avoiding vendor lock-in",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Avoiding vendor lock-in"
+        },
+        {
+          "question": "How does multi-cloud improve redundancy?",
+          "options": [
+            "By using multiple CSPs to ensure availability",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By using multiple CSPs to ensure availability"
+        }
+      ]
     },
     {
       "title": "Day 13: What is hybrid cloud",
-      "body": "Hybrid cloud is a computing environment that combines public and private clouds, allowing data and applications to be shared between them. This approach provides greater flexibility and scalability, as organizations can choose where to run their applications based on their specific requirements."
+      "body": "Hybrid cloud is a computing environment that combines public and private clouds, allowing data and applications to be shared between them. This approach provides greater flexibility and scalability, as organizations can choose where to run their applications based on their specific requirements.",
+      "quiz": [
+        {
+          "question": "What is hybrid cloud?",
+          "options": [
+            "A computing environment that combines public and private clouds",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A computing environment that combines public and private clouds"
+        },
+        {
+          "question": "What is one benefit of using a hybrid cloud approach?",
+          "options": [
+            "Greater flexibility and scalability",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Greater flexibility and scalability"
+        },
+        {
+          "question": "How does hybrid cloud allow organizations to choose where to run applications?",
+          "options": [
+            "By sharing data and applications between public and private clouds",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By sharing data and applications between public and private clouds"
+        }
+      ]
     },
     {
       "title": "Day 14: What is DevOps",
-      "body": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software more quickly. In the context of cloud computing, DevOps practices often involve using automation tools and cloud services to streamline the development, testing, and deployment processes."
+      "body": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software more quickly. In the context of cloud computing, DevOps practices often involve using automation tools and cloud services to streamline the development, testing, and deployment processes.",
+      "quiz": [
+        {
+          "question": "What is DevOps?",
+          "options": [
+            "A set of practices that combines software development and IT operations",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A set of practices that combines software development and IT operations"
+        },
+        {
+          "question": "What is one benefit of using DevOps practices in cloud computing?",
+          "options": [
+            "Shortening the development lifecycle and delivering high-quality software",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Shortening the development lifecycle and delivering high-quality software"
+        },
+        {
+          "question": "How do DevOps practices often streamline development processes?",
+          "options": [
+            "By using automation tools and cloud services",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By using automation tools and cloud services"
+        }
+      ]
     },
     {
       "title": "Day 15: What is continuous integration/continuous deployment (CI/CD)",
-      "body": "Continuous integration (CI) and continuous deployment (CD) are software development practices that involve automatically building, testing, and deploying code changes. CI/CD pipelines help ensure that code changes are integrated into the main codebase quickly and reliably, reducing the risk of bugs and improving overall software quality."
+      "body": "Continuous integration (CI) and continuous deployment (CD) are software development practices that involve automatically building, testing, and deploying code changes. CI/CD pipelines help ensure that code changes are integrated into the main codebase quickly and reliably, reducing the risk of bugs and improving overall software quality.",
+      "quiz": [
+        {
+          "question": "What is continuous integration (CI)?",
+          "options": [
+            "A software development practice that involves automatically building and testing code changes",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A software development practice that involves automatically building and testing code changes"
+        },
+        {
+          "question": "What is one benefit of using CI/CD pipelines?",
+          "options": [
+            "Reducing the risk of bugs and improving software quality",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Reducing the risk of bugs and improving software quality"
+        },
+        {
+          "question": "How do CI/CD pipelines help ensure code changes are integrated quickly?",
+          "options": [
+            "By automating the build, test, and deployment processes",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By automating the build, test, and deployment processes"
+        }
+      ]
     },
     {
       "title": "Day 16: What is infrastructure as code (IaC)",
-      "body": "Infrastructure as code (IaC) is a practice that involves managing and provisioning cloud infrastructure using code and automation tools. IaC allows developers to define their infrastructure in a declarative manner, making it easier to version control, test, and deploy changes to the infrastructure."
+      "body": "Infrastructure as code (IaC) is a practice that involves managing and provisioning cloud infrastructure using code and automation tools. IaC allows developers to define their infrastructure in a declarative manner, making it easier to version control, test, and deploy changes to the infrastructure.",
+      "quiz": [
+        {
+          "question": "What is infrastructure as code (IaC)?",
+          "options": [
+            "A practice that involves managing and provisioning cloud infrastructure using code",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A practice that involves managing and provisioning cloud infrastructure using code"
+        },
+        {
+          "question": "What is one benefit of using IaC?",
+          "options": [
+            "Easier version control, testing, and deployment of infrastructure changes",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Easier version control, testing, and deployment of infrastructure changes"
+        },
+        {
+          "question": "How does IaC help developers manage their infrastructure?",
+          "options": [
+            "By defining infrastructure in a declarative manner",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By defining infrastructure in a declarative manner"
+        }
+      ]
     },
     {
       "title": "Day 17: What is a microservices architecture",
-      "body": "A microservices architecture is an approach to software development where applications are built as a collection of loosely coupled, independently deployable services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently. This architecture is well-suited for cloud-native applications and allows for greater flexibility and scalability."
+      "body": "A microservices architecture is an approach to software development where applications are built as a collection of loosely coupled, independently deployable services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently. This architecture is well-suited for cloud-native applications and allows for greater flexibility and scalability.",
+      "quiz": [
+        {
+          "question": "What is a microservices architecture?",
+          "options": [
+            "An approach to software development where applications are built as a collection of loosely coupled services",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "An approach to software development where applications are built as a collection of loosely coupled services"
+        },
+        {
+          "question": "What is one benefit of using a microservices architecture?",
+          "options": [
+            "Greater flexibility and scalability",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Greater flexibility and scalability"
+        },
+        {
+          "question": "How do microservices allow for independent development and deployment?",
+          "options": [
+            "By building applications as a collection of independently deployable services",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By building applications as a collection of independently deployable services"
+        }
+      ]
     },
     {
       "title": "Day 18: What is a serverless architecture",
-      "body": "A serverless architecture is a cloud computing model where the cloud provider automatically manages the infrastructure needed to run applications. In this model, developers write code and deploy it without worrying about the underlying servers or infrastructure. Serverless architectures allow for automatic scaling and pay-as-you-go pricing, making them cost-effective for many applications."
+      "body": "A serverless architecture is a cloud computing model where the cloud provider automatically manages the infrastructure needed to run applications. In this model, developers write code and deploy it without worrying about the underlying servers or infrastructure. Serverless architectures allow for automatic scaling and pay-as-you-go pricing, making them cost-effective for many applications.",
+      "quiz": [
+        {
+          "question": "What is a serverless architecture?",
+          "options": [
+            "A cloud computing model where the cloud provider manages infrastructure",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A cloud computing model where the cloud provider manages infrastructure"
+        },
+        {
+          "question": "What is one benefit of using a serverless architecture?",
+          "options": [
+            "Automatic scaling and pay-as-you-go pricing",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Automatic scaling and pay-as-you-go pricing"
+        },
+        {
+          "question": "How do developers interact with a serverless architecture?",
+          "options": [
+            "By writing code and deploying it without worrying about servers",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By writing code and deploying it without worrying about servers"
+        }
+      ]
     },
     {
       "title": "Day 19: What is a cloud-native application",
-      "body": "A cloud-native application is an application designed specifically to take advantage of the cloud computing model. Cloud-native applications are typically built using microservices architectures, containerization, and serverless computing. They are designed to be scalable, resilient, and easily deployable in cloud environments."
+      "body": "A cloud-native application is an application designed specifically to take advantage of the cloud computing model. Cloud-native applications are typically built using microservices architectures, containerization, and serverless computing. They are designed to be scalable, resilient, and easily deployable in cloud environments.",
+      "quiz": [
+        {
+          "question": "What is a cloud-native application?",
+          "options": [
+            "An application designed specifically for cloud computing",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "An application designed specifically for cloud computing"
+        },
+        {
+          "question": "What is one characteristic of cloud-native applications?",
+          "options": [
+            "Scalability and resilience",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Scalability and resilience"
+        },
+        {
+          "question": "How are cloud-native applications typically built?",
+          "options": [
+            "Using microservices architectures, containerization, and serverless computing",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "Using microservices architectures, containerization, and serverless computing"
+        }
+      ]  
     },
     {
       "title": "Day 20: What is a cloud security group",
-      "body": "A cloud security group is a virtual firewall that controls inbound and outbound traffic to resources in a cloud environment. Security groups allow you to define rules that specify which traffic is allowed or denied based on factors such as IP address, port number, and protocol. They help ensure that only authorized traffic can access your resources."
+      "body": "A cloud security group is a virtual firewall that controls inbound and outbound traffic to resources in a cloud environment. Security groups allow you to define rules that specify which traffic is allowed or denied based on factors such as IP address, port number, and protocol. They help ensure that only authorized traffic can access your resources.",
+      "quiz": [
+        {
+          "question": "What is a cloud security group?",
+          "options": [
+            "A virtual firewall that controls traffic to resources",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A virtual firewall that controls traffic to resources"
+        },
+        {
+          "question": "What is one benefit of using security groups?",
+          "options": [
+            "Defining rules for allowed or denied traffic",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Defining rules for allowed or denied traffic"
+        },
+        {
+          "question": "How do security groups help protect cloud resources?",
+          "options": [
+            "By allowing only authorized traffic to access resources",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By allowing only authorized traffic to access resources"
+        }
+      ]
     },
     {
       "title": "Day 21: What is a cloud access control list (ACL)",
-      "body": "A cloud access control list (ACL) is a set of rules that define which users or systems can access specific resources in a cloud environment. ACLs help enforce security policies by allowing you to specify permissions for individual users or groups, ensuring that only authorized users can access sensitive data and resources."
+      "body": "A cloud access control list (ACL) is a set of rules that define which users or systems can access specific resources in a cloud environment. ACLs help enforce security policies by allowing you to specify permissions for individual users or groups, ensuring that only authorized users can access sensitive data and resources.",
+      "quiz": [
+        {
+          "question": "What is a cloud access control list (ACL)?",
+          "options": [
+            "A set of rules that define access permissions for resources",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A set of rules that define access permissions for resources"
+        },
+        {
+          "question": "What is one benefit of using ACLs?",
+          "options": [
+            "Enforcing security policies by specifying permissions",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Enforcing security policies by specifying permissions"
+        },
+        {
+          "question": "How do ACLs help protect sensitive data and resources?",
+          "options": [
+            "By allowing only authorized users to access them",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By allowing only authorized users to access them"
+        }
+      ]
     },
     {
       "title": "Day 22: What is cloud monitoring",
-      "body": "Cloud monitoring is the process of tracking the performance and availability of cloud resources and applications. Monitoring tools help you identify issues, optimize resource usage, and ensure that your applications are running smoothly. Common metrics monitored include CPU usage, memory usage, network traffic, and response times."
+      "body": "Cloud monitoring is the process of tracking the performance and availability of cloud resources and applications. Monitoring tools help you identify issues, optimize resource usage, and ensure that your applications are running smoothly. Common metrics monitored include CPU usage, memory usage, network traffic, and response times.",
+      "quiz": [
+        {
+          "question": "What is cloud monitoring?",
+          "options": [
+            "The process of tracking performance and availability of cloud resources",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The process of tracking performance and availability of cloud resources"
+        },
+        {
+          "question": "What is one benefit of using cloud monitoring tools?",
+          "options": [
+            "Identifying issues and optimizing resource usage",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Identifying issues and optimizing resource usage"
+        },
+        {
+          "question": "What common metrics are monitored in cloud environments?",
+          "options": [
+            "CPU usage, memory usage, network traffic, and response times",
+            "Physical security for servers",
+            "Data storage in the cloud"
+          ],
+          "answer": "CPU usage, memory usage, network traffic, and response times"
+        }
+      ]
     },
     {
       "title": "Day 23: What is cloud logging",
-      "body": "Cloud logging is the practice of collecting and storing log data from cloud resources and applications. Logs provide valuable insights into the behavior of your applications and can help you troubleshoot issues, monitor performance, and ensure compliance with security policies."
+      "body": "Cloud logging is the practice of collecting and storing log data from cloud resources and applications. Logs provide valuable insights into the behavior of your applications and can help you troubleshoot issues, monitor performance, and ensure compliance with security policies.",
+      "quiz": [
+        {
+          "question": "What is cloud logging?",
+          "options": [
+            "The practice of collecting and storing log data from cloud resources",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The practice of collecting and storing log data from cloud resources"
+        },
+        {
+          "question": "What is one benefit of using cloud logging?",
+          "options": [
+            "Troubleshooting issues and monitoring performance",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Troubleshooting issues and monitoring performance"
+        },
+        {
+          "question": "How can logs help ensure compliance with security policies?",
+          "options": [
+            "By providing insights into application behavior and access patterns",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By providing insights into application behavior and access patterns"
+        }
+      ]
     },
     {
       "title": "Day 24: What is cloud cost management",
-      "body": "Cloud cost management involves tracking and optimizing the costs associated with using cloud services. This includes monitoring resource usage, identifying cost-saving opportunities, and implementing budgeting and forecasting strategies to ensure that your cloud spending aligns with your business goals."
+      "body": "Cloud cost management involves tracking and optimizing the costs associated with using cloud services. This includes monitoring resource usage, identifying cost-saving opportunities, and implementing budgeting and forecasting strategies to ensure that your cloud spending aligns with your business goals.",
+      "quiz": [
+        {
+          "question": "What is cloud cost management?",
+          "options": [
+            "Tracking and optimizing costs associated with cloud services",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "Tracking and optimizing costs associated with cloud services"
+        },
+        {
+          "question": "What is one benefit of using cloud cost management tools?",
+          "options": [
+            "Identifying cost-saving opportunities and aligning spending with business goals",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Identifying cost-saving opportunities and aligning spending with business goals"
+        },
+        {
+          "question": "How can budgeting and forecasting strategies help in cloud cost management?",
+          "options": [
+            "By ensuring that cloud spending aligns with business goals",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By ensuring that cloud spending aligns with business goals"
+        }
+      ]
     },
     {
       "title": "Day 25: What is cloud compliance",
-      "body": "Cloud compliance refers to the process of ensuring that your cloud resources and applications meet regulatory requirements and industry standards. This includes implementing security controls, conducting audits, and maintaining documentation to demonstrate compliance with relevant regulations such as GDPR, HIPAA, or PCI DSS."
+      "body": "Cloud compliance refers to the process of ensuring that your cloud resources and applications meet regulatory requirements and industry standards. This includes implementing security controls, conducting audits, and maintaining documentation to demonstrate compliance with relevant regulations such as GDPR, HIPAA, or PCI DSS.",
+      "quiz": [
+        {
+          "question": "What is cloud compliance?",
+          "options": [
+            "Ensuring that cloud resources meet regulatory requirements and industry standards",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "Ensuring that cloud resources meet regulatory requirements and industry standards"
+        },
+        {
+          "question": "What is one benefit of ensuring cloud compliance?",
+          "options": [
+            "Demonstrating adherence to regulations and maintaining security controls",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Demonstrating adherence to regulations and maintaining security controls"
+        },
+        {
+          "question": "How can audits help in maintaining cloud compliance?",
+          "options": [
+            "By verifying that security controls are in place and effective",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By verifying that security controls are in place and effective"
+        }
+      ]
     },
     {
       "title": "Day 26: What is a cloud service level agreement (SLA)",
-      "body": "A cloud service level agreement (SLA) is a contract between a cloud service provider and a customer that outlines the expected level of service, including performance metrics, availability guarantees, and support response times. SLAs help ensure that both parties understand their responsibilities and expectations regarding the use of cloud services."
+      "body": "A cloud service level agreement (SLA) is a contract between a cloud service provider and a customer that outlines the expected level of service, including performance metrics, availability guarantees, and support response times. SLAs help ensure that both parties understand their responsibilities and expectations regarding the use of cloud services.",
+      "quiz": [
+        {
+          "question": "What is a cloud service level agreement (SLA)?",
+          "options": [
+            "A contract that outlines the expected level of service from a cloud provider",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "A contract that outlines the expected level of service from a cloud provider"
+        },
+        {
+          "question": "What is one benefit of having an SLA?",
+          "options": [
+            "Ensuring both parties understand their responsibilities and expectations",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Ensuring both parties understand their responsibilities and expectations"
+        },
+        {
+          "question": "What performance metrics might be included in an SLA?",
+          "options": [
+            "Availability guarantees and support response times",
+            "Physical security for servers",
+            "Data storage in the cloud"
+          ],
+          "answer": "Availability guarantees and support response times"
+        }
+      ]
     },
     {
       "title": "Day 27: What is a cloud migration",
-      "body": "Cloud migration is the process of moving applications, data, and workloads from on-premises infrastructure or another cloud environment to a cloud service provider. This process can involve rehosting, replatforming, or refactoring applications to take advantage of cloud-native features and capabilities. Successful cloud migrations require careful planning, testing, and execution to minimize downtime and ensure a smooth transition."
+      "body": "Cloud migration is the process of moving applications, data, and workloads from on-premises infrastructure or another cloud environment to a cloud service provider. This process can involve rehosting, replatforming, or refactoring applications to take advantage of cloud-native features and capabilities. Successful cloud migrations require careful planning, testing, and execution to minimize downtime and ensure a smooth transition.",
+      "quiz": [
+        {
+          "question": "What is cloud migration?",
+          "options": [
+            "The process of moving applications and data to a cloud service provider",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The process of moving applications and data to a cloud service provider"
+        },
+        {
+          "question": "What is one benefit of cloud migration?",
+          "options": [
+            "Taking advantage of cloud-native features and capabilities",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Taking advantage of cloud-native features and capabilities"
+        },
+        {
+          "question": "What is a key consideration when planning a cloud migration?",
+          "options": [
+            "Minimizing downtime and ensuring a smooth transition",
+            "Providing physical security for servers",
+            "Managing servers"
+          ],
+          "answer": "Minimizing downtime and ensuring a smooth transition"
+        }
+      ]
     },
     {
       "title": "Day 28: What is cloud disaster recovery",
-      "body": "Cloud disaster recovery is the process of preparing for and recovering from unexpected events that disrupt cloud services or applications. This includes implementing backup and restore strategies, creating failover plans, and regularly testing recovery procedures to ensure that your applications can quickly recover from outages or data loss."
+      "body": "Cloud disaster recovery is the process of preparing for and recovering from unexpected events that disrupt cloud services or applications. This includes implementing backup and restore strategies, creating failover plans, and regularly testing recovery procedures to ensure that your applications can quickly recover from outages or data loss.",
+      "quiz": [
+        {
+          "question": "What is cloud disaster recovery?",
+          "options": [
+            "The process of preparing for and recovering from disruptions in cloud services",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The process of preparing for and recovering from disruptions in cloud services"
+        },
+        {
+          "question": "What is one benefit of implementing cloud disaster recovery strategies?",
+          "options": [
+            "Ensuring quick recovery from outages or data loss",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Ensuring quick recovery from outages or data loss"
+        },
+        {
+          "question": "How can regular testing of recovery procedures help in disaster recovery?",
+          "options": [
+            "By verifying that backup and restore strategies are effective",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By verifying that backup and restore strategies are effective"
+        }
+      ]
     },
     {
       "title": "Day 29: What is cloud scalability",
-      "body": "Cloud scalability refers to the ability of a cloud environment to handle increased workloads by adding or removing resources as needed. This can be achieved through vertical scaling (adding more resources to existing instances) or horizontal scaling (adding more instances). Cloud scalability allows organizations to adapt to changing demands without significant upfront investments in infrastructure."
+      "body": "Cloud scalability refers to the ability of a cloud environment to handle increased workloads by adding or removing resources as needed. This can be achieved through vertical scaling (adding more resources to existing instances) or horizontal scaling (adding more instances). Cloud scalability allows organizations to adapt to changing demands without significant upfront investments in infrastructure.",
+      "quiz": [
+        {
+          "question": "What is cloud scalability?",
+          "options": [
+            "The ability to handle increased workloads by adding or removing resources",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The ability to handle increased workloads by adding or removing resources"
+        },
+        {
+          "question": "What is one benefit of cloud scalability?",
+          "options": [
+            "Adapting to changing demands without significant upfront investments",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Adapting to changing demands without significant upfront investments"
+        },
+        {
+          "question": "What are the two types of scaling in cloud environments?",
+          "options": [
+            "Vertical scaling and horizontal scaling",
+            "Physical security for servers and data storage",
+            "Managing servers and applications"
+          ],
+          "answer": "Vertical scaling and horizontal scaling"
+        }
+      ]
     },
     {
       "title": "Day 30: What is cloud elasticity",
-      "body": "Cloud elasticity is the ability of a cloud environment to automatically adjust resources based on current demand. This means that resources can be scaled up or down dynamically, allowing organizations to optimize resource usage and costs. Elasticity is a key benefit of cloud computing, enabling businesses to respond quickly to changing workloads and user demands."
+      "body": "Cloud elasticity is the ability of a cloud environment to automatically adjust resources based on current demand. This means that resources can be scaled up or down dynamically, allowing organizations to optimize resource usage and costs. Elasticity is a key benefit of cloud computing, enabling businesses to respond quickly to changing workloads and user demands.",
+      "quiz": [
+        {
+          "question": "What is cloud elasticity?",
+          "options": [
+            "The ability to automatically adjust resources based on demand",
+            "A type of physical server",
+            "A method of storing data in the cloud"
+          ],
+          "answer": "The ability to automatically adjust resources based on demand"
+        },
+        {
+          "question": "What is one benefit of cloud elasticity?",
+          "options": [
+            "Optimizing resource usage and costs",
+            "Increased physical space",
+            "Reduced network connectivity"
+          ],
+          "answer": "Optimizing resource usage and costs"
+        },
+        {
+          "question": "How does elasticity help businesses respond to changing workloads?",
+          "options": [
+            "By dynamically scaling resources up or down",
+            "By providing physical security for servers",
+            "By managing servers"
+          ],
+          "answer": "By dynamically scaling resources up or down"
+        }
+      ]
     }
   ]
