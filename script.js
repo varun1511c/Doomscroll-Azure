@@ -127,6 +127,12 @@ submitBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   const radios = quizContainer.querySelectorAll('input[type=radio]');
   radios.forEach(r => r.checked = false);
+
+  localStorage.removeItem(`day${currentDay}_answers`);
+  localStorage.removeItem(`day${currentDay}_task`);
+  localStorage.removeItem(`day${currentDay}_eval`);
+
+  buildCalendar();
 });
 
 completeBtn.addEventListener('click', () => {
@@ -136,6 +142,15 @@ completeBtn.addEventListener('click', () => {
   const taskKey = `day${currentDay}_task`;
   const evalStatus = localStorage.getItem(evalKey);
   const taskStatus = localStorage.getItem(taskKey);
+
+  const savedAnswers = JSON.parse(localStorage.getItem(`day${currentDay}_answers`)) || [];
+  const totalQuestions = content[currentDay - 1].quiz.length;
+  const allAnswered = savedAnswers.length === totalQuestions && savedAnswers.every(ans => ans !== null);
+
+  if (!allAnswered) {
+    alert('Please complete the quiz before marking as complete.');
+    return;
+  }
 
   if (currentAnswersShown) {
     // Toggle evaluation complete/incomplete
